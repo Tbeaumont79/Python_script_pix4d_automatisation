@@ -1,5 +1,6 @@
 from openfile import openFile
 
-def loadProject(projectName) {
-        openFile(projectName,r)
-}
+def loadProject(projectName):
+    fd = openFile(projectName,'r')
+    fd = fd.split()
+    print(fd)
