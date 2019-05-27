@@ -2,5 +2,6 @@ from openfile import openFile
 
 def loadProject(projectName):
     fd = openFile(projectName,'r')
-    fd = fd.split()
+    fd.read()
     print(fd)
+    fd.close()
