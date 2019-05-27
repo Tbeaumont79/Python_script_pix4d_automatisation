@@ -1,4 +1,6 @@
-from createProject import *
+from lib/createProject import *
+from lib/newpath import setNewPath
+from li/openfile import openFile
 
 def     main():
     setNewPath('C:\\Users\\beaumontt\\Desktop\\reconstruction2\\FLIGHT 14 A\\DRONE')
@@ -10,4 +12,3 @@ def     main():
 
 if __name__ == '__main__':
     main()
-    

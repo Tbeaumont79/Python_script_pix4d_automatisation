@@ -1,14 +1,6 @@
 import glob
 import os
 
-
-def    openFile(path,mode):
-    fd = open(path,mode)
-    return fd
-    
-def    setNewPath(path):
-    return os.chdir(path)
-
 def     getAllImagePath(path):
     image = glob.glob("*.jpg")
     imagePath = []
@@ -25,10 +17,8 @@ def     createProject(template,imgPath,numberOfImage):
     finalContent = '<?xml version="1.0" encoding="UTF-8"?>'+'\n'+'<pix4dmapper>'+'\n'+version+'\n'+'<options>'+'\n\t'+'<loadTemplate>'+template+'</loadTemplate>'+'\n'+'</options>'+'\n'+'<inputs>'+'\n'+'<images>'
     i = 0
     while i < numberOfImage:
-        finalContent += '\n\t'
-        finalContent += ''+imgPath[i]
+        finalContent += '\n\t'+imgPath[i]
         i += 1
+
     finalContent += ''+'\n'+'</images>'+'\n'+'</inputs>'+'\n'+'</pix4dmapper>'
     return finalContent
-
-
