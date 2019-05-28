@@ -15,15 +15,12 @@ def retrieve_file_paths(dirName):
 
 def zipProject(dirname):
   dir_name = dirname
-
   # Call the function to retrieve all files and folders of the assigned directory
   filePaths = retrieve_file_paths(dir_name)
-
   # printing the list of all files to be zipped
   print('The following list of files will be zipped:')
   for fileName in filePaths:
     print(fileName)
-
   # writing files to a zipfile
   zip_file = zipfile.ZipFile(dir_name+'.zip', 'w')
   with zip_file:

@@ -9,9 +9,9 @@ import zipfile
 #-------------------------#
 
 def     main():
-    projectName = 'test.p4d'
+    projectName = 'FlightA.p4d'
     template = 'step123'
-    projectImagePath = ''
+    projectImagePath = '\\nt-nas\\CDRIN\\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE​'
     setUpNewProject(projectImagePath, projectName, template)
     openProjet(projectName)
 
