@@ -1,6 +1,6 @@
 import glob
 import os
-
+from newpath import *
 #-------------------------#
 def     getAllImagePath(path):
     # get all the img from the dir

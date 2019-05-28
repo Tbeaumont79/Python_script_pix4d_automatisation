@@ -8,7 +8,7 @@ from loadsoftware import *
 def     main():
     projectName = 'FlightA.p4d'
     template = 'step123'
-    projectImagePath = '\\nt-nas\\CDRIN\\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE​'
+    projectImagePath = '\\nt-nas\CDRIN\Projets\\1718_67_CGM-auto\source_acquisition\FLIGHT 14 A\DRONE​'
     setUpNewProject(projectImagePath, projectName, template)
     openProjet(projectName)
 
