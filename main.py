@@ -2,7 +2,7 @@
 from createProject import *
 from newpath import setNewPath
 from openfile import openFile
-from loadprojectwithtemplate import loadProject
+from loadsoftware import *
 #-------------------------#
 
 def     main():
