@@ -11,7 +11,7 @@ def retrieve_file_paths(dirName):
         filePaths.append(filePath)
 
   return filePaths
-
+#-------------------------#
 
 def zipProject(dirname):
   dir_name = dirname
