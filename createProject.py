@@ -1,3 +1,6 @@
+import glob
+import os
+
 #-------------------------#
 def     getAllImagePath(path):
     # get all the img from the dir
@@ -31,5 +34,5 @@ def     setUpNewProject(projectImagePath, projectName, templateName):
     fd = openFile(projectName,'w')
     fd.write(createXml)
     fd.close()
-    
+
 #-------------------------#

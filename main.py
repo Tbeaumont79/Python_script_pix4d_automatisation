@@ -3,9 +3,6 @@ from createProject import *
 from newpath import setNewPath
 from openfile import openFile
 from loadprojectwithtemplate import loadProject
-import glob
-import os
-import zipfile
 #-------------------------#
 
 def     main():
