@@ -16,9 +16,9 @@ def     isProjectAlreadyCreated(projectNameFullPath):
 def     isProjectAlreadyBuild(projectNameFullPath, startPath):
     # first check the size of the directory
     # second (optional) check the number of element in the directory.
-    numberOfElement = len(glob.glob(projectNameFullPath/*))
+    numberOfElement = len(glob.glob(projectNameFullPath+'\*'))
     getSize = getSize(startPath);
-    if (numberOfElement > 0 && getSize > 0):
+    if (numberOfElement > 0 and getSize > 0):
         return False
     else:
         return True
