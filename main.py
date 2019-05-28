@@ -2,14 +2,16 @@ from createProject import *
 from newpath import setNewPath
 from openfile import openFile
 from loadprojectwithtemplate import loadProject
+import glob
+import os
+import zipfile
 
 def     main():
-    setNewPath('C:\\Users\\beaumontt\\Desktop\\reconstruction2\\FLIGHT 14 A\\DRONE')
-    imgFullPath,countImage = getAllImagePath('C:\\Users\\beaumontt\\Desktop\\reconstruction2\\FLIGHT 14 A\\DRONE')
-    createXml = createProject('step123',imgFullPath,countImage)
-    fd = openFile('test.p4d','w')
-    fd.write(createXml)
-    fd.close()
+    projectName = 'test.p4d'
+    template = 'step123'
+    projectImagePath = ''
+    setUpNewProject()
+    openProjet(projectName)
 
 if __name__ == '__main__':
     main()

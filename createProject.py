@@ -1,6 +1,4 @@
-import glob
-import os
-
+#-------------------------#
 def     getAllImagePath(path):
     # get all the img from the dir
     image = glob.glob("*.jpg")
@@ -13,6 +11,7 @@ def     getAllImagePath(path):
         imagePath.append('<image path="'+getPathCommand+'"/>')
         i += 1
     return imagePath,countImage
+#-------------------------#
 # the function createProject build the project with all the xml that he need
 def     createProject(template,imgPath,numberOfImage):
     version = '<software>'+'\n'+'<projectVersion>4.3.15</projectVersion>'+'\n\t'+'<p4dVersion>21</p4dVersion>'+'\n'+'<cameraModelVersion>19</cameraModelVersion>'+'\n'+'</software>'
@@ -24,3 +23,13 @@ def     createProject(template,imgPath,numberOfImage):
 
     finalContent += ''+'\n'+'</images>'+'\n'+'</inputs>'+'\n'+'</pix4dmapper>'
     return finalContent
+#-------------------------#
+def     setUpNewProject(projectImagePath, projectName, templateName):
+    setNewPath(projectImagePath)
+    imgFullPath,countImage = getAllImagePath(projectImagePath)
+    createXml = createProject(templateName,imgFullPath,countImage)
+    fd = openFile(projectName,'w')
+    fd.write(createXml)
+    fd.close()
+    
+#-------------------------#

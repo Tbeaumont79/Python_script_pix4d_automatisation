@@ -1,8 +1,5 @@
 # import required modules
-import zipfile
-import os
-
-
+#-------------------------#
 # Declare the function to return all file paths of the particular directory
 def retrieve_file_paths(dirName):
   filePaths = []
