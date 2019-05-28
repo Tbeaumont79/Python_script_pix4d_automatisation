@@ -2,6 +2,7 @@
 from createProject import *
 from openfile import openFile
 from loadsoftware import *
+from isProjectAlreadyCreated import *
 #-------------------------#
 
 def     main():
@@ -9,8 +10,11 @@ def     main():
     projectNameFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\DRONE'+projectName
     template = 'step123'
     projectImagePath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\DRONE'
-    setUpNewProject(projectImagePath, projectName, template)
-    openProjet(projectNameFullPath)
+    if (!isProjectAlreadyCreated(projectNameFullPath)): 
+        setUpNewProject(projectImagePath, projectName, template)
+    else:
+        print('Warning project is already build, you may change the name of the project')
+    #openProjet(projectNameFullPath)
 
 if __name__ == '__main__':
     main()
