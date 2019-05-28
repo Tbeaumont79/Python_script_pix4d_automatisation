@@ -1,7 +1,7 @@
-from /lib/createProject import *
-from /lib/newpath import setNewPath
-from /lib/openfile import openFile
-from /lib/loadprojectwithtemplate import loadProject
+from createProject import *
+from newpath import setNewPath
+from openfile import openFile
+from loadprojectwithtemplate import loadProject
 
 def     main():
     setNewPath('C:\\Users\\beaumontt\\Desktop\\reconstruction2\\FLIGHT 14 A\\DRONE')
