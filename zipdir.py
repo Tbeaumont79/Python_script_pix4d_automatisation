@@ -1,6 +1,7 @@
 # import required modules
 import os
 import zipfile
+import newpath
 
 # Declare the function to return all file paths of the particular directory
 def retrieve_file_paths(dirName):
@@ -33,8 +34,10 @@ def zipProject(dirname):
   print(dir_name+'.zip file is created successfully!')
 
 def main():
+    setNewPath('\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE');
     projectNameWithoutExtension = 'FlightA';
     zipProject(projectNameWithoutExtension);
 
-  if __name__ == '__main__':
+
+if __name__ == '__main__':
       main()
