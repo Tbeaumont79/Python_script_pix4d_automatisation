@@ -31,3 +31,10 @@ def zipProject(dirname):
       zip_file.write(file)
 
   print(dir_name+'.zip file is created successfully!')
+
+def main():
+    projectNameWithoutExtension = 'FlightA';
+    zipProject(projectNameWithoutExtension);
+
+  if __name__ == '__main__':
+      main()

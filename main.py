@@ -3,8 +3,6 @@ from createProject import *
 from openfile import openFile
 from loadsoftware import *
 from isProjectAlreadyCreated import *
-from zipdir import zipProject
-from cpyfolder import copyDirectory
 
 #-------------------------#
 
@@ -17,8 +15,7 @@ def     main():
         setUpNewProject(projectImagePath, projectName, template)
     else:
         print('Warning project is already build, you may change the name of the project')
-    projectNameWithoutExtension = projectName.split('.');
-    zipProject(projectNameWithoutExtension[0]);
+
 
     #openProjet(projectNameFullPath)
 
