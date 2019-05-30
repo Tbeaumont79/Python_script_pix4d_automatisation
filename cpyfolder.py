@@ -3,7 +3,7 @@ from newpath import *
 
 def copyDirectory(src, dest):
     try:
-        shutil.copytree(src, dest)
+        shutil.copy(src, dest)
     # Directories are the same
     except shutil.Error as e:
         print('Directory not copied. Error: %s' % e)
@@ -12,7 +12,7 @@ def copyDirectory(src, dest):
         print('Directory not copied. Error: %s' % e)
 
 def main():
-    srcFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE\\FlightA.zip\\FlightA'
+    srcFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE\\FlightA.zip'
     destFullPath = '\\\\nt-nas\\CDRIN\\Projets\\1718_67_CGM-auto\\archives'
     copyDirectory(srcFullPath,destFullPath)
 if __name__ == '__main__':
