@@ -12,7 +12,7 @@ def copyDirectory(src, dest):
         print('Directory not copied. Error: %s' % e)
 
 def main():
-    srcFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE\\FlightA.zip'
+    srcFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE\\FlightA.zip\\FlightA'
     destFullPath = '\\\\nt-nas\\CDRIN\\Projets\\1718_67_CGM-auto\\archives'
     copyDirectory(srcFullPath,destFullPath)
 if __name__ == '__main__':
