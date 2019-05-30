@@ -1,7 +1,7 @@
 # import required modules
 import os
 import zipfile
-#-------------------------#
+
 # Declare the function to return all file paths of the particular directory
 def retrieve_file_paths(dirName):
   filePaths = []
@@ -13,7 +13,7 @@ def retrieve_file_paths(dirName):
         filePaths.append(filePath)
 
   return filePaths
-#-------------------------#
+
 
 def zipProject(dirname):
   dir_name = dirname

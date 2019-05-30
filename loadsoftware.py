@@ -1,4 +1,4 @@
-#-------------------------#
+
 import os
 from newpath import setNewPath
 
