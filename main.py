@@ -1,7 +1,6 @@
 
 from createProject import *
 from openfile import openFile
-from loadsoftware import *
 from isProjectAlreadyCreated import *
 
 #-------------------------#
@@ -15,9 +14,6 @@ def     main():
         setUpNewProject(projectImagePath, projectName, template)
     else:
         print('Warning project is already build, you may change the name of the project')
-
-
-    #openProjet(projectNameFullPath)
 
 if __name__ == '__main__':
     main()
