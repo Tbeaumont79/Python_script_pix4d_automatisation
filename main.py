@@ -2,12 +2,10 @@
 from createProject import *
 from openfile import openFile
 from isProjectAlreadyCreated import *
-
-#-------------------------#
+from getProjectNameAndPath import getProjectNameAndPath
 
 def     main():
-    projectName = 'FlightA.p4d'
-    projectNameFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE\\'+projectName
+    projectName,projectNameFullPath = getProjectNameAndPath()
     template = 'step123'
     projectImagePath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE'
     if (isProjectAlreadyCreated(projectNameFullPath) == False):

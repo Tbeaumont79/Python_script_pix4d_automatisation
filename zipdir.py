@@ -35,7 +35,7 @@ def zipProject(dirname):
 
 def main():
     setNewPath('\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE');
-    projectNameWithoutExtension = 'FlightA';
+    projectNameWithoutExtension = 'FlightA'; #<- change asap
     zipProject(projectNameWithoutExtension);
 
 

@@ -21,6 +21,6 @@ def     isProjectAlreadyBuild(projectName, startPath):
         return True
 
 def main():
-    projectName = 'FlightA';
-    projectNameFullPath = '\\\\nt-nas\\CDRIN\Projets\\1718_67_CGM-auto\\source_acquisition\\FLIGHT 14 A\\DRONE\\'+projectName
+    projectName, projectNameFullPath = getProjectNameAndPath()
+    projectNameFullPath = projectNameFullPath+'\\'+projectName
     isProjectAlreadyBuild(projectName,projectNameFullPath)
