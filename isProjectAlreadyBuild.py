@@ -16,11 +16,12 @@ def     isProjectAlreadyBuild(projectName, startPath):
     numberOfElement = len(glob.glob(projectNameFullPath+'\*'))
     getSize = getSize(startPath);
     if (numberOfElement > 0 and getSize > 0):
-        return False
-    else:
         return True
+    else:
+        return False
 
 def main():
     projectName, projectNameFullPath = getProjectNameAndPath()
     projectNameFullPath = projectNameFullPath+'\\'+projectName
-    isProjectAlreadyBuild(projectName,projectNameFullPath)
+    isProjectBuild = isProjectAlreadyBuild(projectName,projectNameFullPath)
+    print(isProjectBuild)
