@@ -1,5 +1,6 @@
 import os
 import glob
+from getProjectNameAndPath import *
 # this function check is the fullprojectnamepath is already created
 # return true if the project exist false if not
 def     getSize(startPath):
@@ -13,12 +14,13 @@ def     getSize(startPath):
 def     isProjectAlreadyBuild(projectName, startPath):
     # first check the size of the directory
     # second (optional) check the number of element in the directory.
-    numberOfElement = len(glob.glob(projectNameFullPath+'\*'))
-    getSize = getSize(startPath);
-    if (numberOfElement > 0 and getSize > 0):
-        return True
+    numberOfElement = len(glob.glob(startPath+'\*'))
+    size = getSize(startPath)
+    if (numberOfElement > 0 and size > 0):
+        msg = "the project is already build"
     else:
-        return False
+        msg = "the project is not build"
+    return msg
 
 def main():
     projectName, projectNameFullPath = getProjectNameAndPath()
