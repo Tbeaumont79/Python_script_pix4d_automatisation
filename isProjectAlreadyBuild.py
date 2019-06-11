@@ -20,10 +20,12 @@ def     isProjectAlreadyBuild(projectName, startPath):
         msg = "the project is already build"
     else:
         msg = "the project is not build"
-    return msg
+    print(msg)
 
 def main():
     projectName, projectNameFullPath = getProjectNameAndPath()
     projectNameFullPath = projectNameFullPath+'\\'+projectName
-    isProjectBuild = isProjectAlreadyBuild(projectName,projectNameFullPath)
-    print(isProjectBuild)
+    isProjectAlreadyBuild(projectName,projectNameFullPath)
+
+if __name__ == '__main__':
+    main()
