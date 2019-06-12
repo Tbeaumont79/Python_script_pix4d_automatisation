@@ -1,3 +1,4 @@
+
 def     projectNameWithoutExtension():
     projectName, _ = getProjectNameAndPath()
     projectNameWithoutExtension = projectName.split('.p4d')
